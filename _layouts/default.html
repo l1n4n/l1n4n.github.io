@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title }} — {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  {% feed_meta %}
+  {% seo %}
+</head>
+<body>
+  <div class="container">
+    <header class="site-header">
+      <div class="site-header-top">
+        <a href="{{ '/' | relative_url }}" class="site-title">{{ site.title }}</a>
+        <nav class="site-nav">
+          <a href="{{ '/' | relative_url }}"{% if page.url == '/' %} class="active"{% endif %}>thoughts</a>
+          <a href="{{ '/cv' | relative_url }}"{% if page.url == '/cv' %} class="active"{% endif %}>cv</a>
+        </nav>
+      </div>
+      <p class="site-tagline">{{ site.description }}</p>
+    </header>
+
+    <main>
+      {{ content }}
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; {{ 'now' | date: "%Y" }} {{ site.author.name }}</p>
+    </footer>
+  </div>
+</body>
+</html>

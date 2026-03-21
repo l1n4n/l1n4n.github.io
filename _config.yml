@@ -1,0 +1,23 @@
+title: "Thoughts"
+description: "Random thoughts, short articles, and things on my mind."
+url: "" # will be https://<username>.github.io
+baseurl: "" # leave empty if using <username>.github.io repo
+
+# Build settings
+markdown: kramdown
+permalink: /:year/:month/:day/:title/
+
+# Pagination (optional, needs jekyll-paginate)
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Author info — customize these
+author:
+  name: "Your Name"
+
+# Exclude from build
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
