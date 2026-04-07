@@ -35,7 +35,7 @@ body {
 
 /* === Layout === */
 .container {
-  max-width: 640px;
+  max-width: 760px;
   margin: 0 auto;
   padding: 3rem 1.5rem;
 }
@@ -350,6 +350,21 @@ body {
   background: var(--code-bg);
   padding: 0.2rem 0.6rem;
   border-radius: 3px;
+}
+
+.cv-overview {
+  display: block;
+  width: calc(100% + 8rem);
+  max-width: 1100px;
+  margin-left: -4rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 700px) {
+  .cv-overview {
+    width: 100%;
+    margin-left: 0;
+  }
 }
 
 .cv-download {
