@@ -15,13 +15,12 @@
   <div class="container">
     <header class="site-header">
       <div class="site-header-top">
-        <a href="{{ '/' | relative_url }}" class="site-title">{{ site.title }}</a>
+        <a href="{{ '/' | relative_url }}" class="site-title">{{ site.author.name }}</a>
         <nav class="site-nav">
-          <a href="{{ '/' | relative_url }}"{% if page.url == '/' %} class="active"{% endif %}>thoughts</a>
-          <a href="{{ '/about' | relative_url }}"{% if page.url == '/about' %} class="active"{% endif %}>about</a>
+          <a href="{{ '/' | relative_url }}"{% if page.url == '/' %} class="active"{% endif %}>about</a>
+          <a href="{{ '/thoughts' | relative_url }}"{% if page.url == '/thoughts/' or page.layout == 'post' %} class="active"{% endif %}>thoughts</a>
         </nav>
       </div>
-      <p class="site-tagline">{{ site.description }}</p>
     </header>
 
     <main>

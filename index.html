@@ -1,16 +1,58 @@
 ---
 layout: default
+title: About
+permalink: /
 ---
-<ul class="post-list">
-  {% for post in site.posts %}
-  <li>
-    <span class="post-list-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-    <h2 class="post-list-title">
-      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-    </h2>
-    {% if post.excerpt %}
-    <p class="post-list-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
-    {% endif %}
-  </li>
-  {% endfor %}
-</ul>
+<section class="about">
+
+  <div class="about-hero">
+    <div class="about-hero-text">
+      <h1 class="about-name">Nan Li <span class="about-name-chinese">李楠</span></h1>
+      <p class="about-tagline">PhD candidate · philosopher of AI · curious person</p>
+      <p class="about-welcome">
+        Welcome. Good to have you here.
+      </p>
+    </div>
+  </div>
+
+  <div class="about-body">
+
+    <div class="about-section">
+      <p>
+        I got my first PhD in philosophy in 2013, working on consciousness and property dualism. Taught philosophy for a few years after that, did postdocs at Rutgers and in Beijing. At some point I decided I wanted to actually build the things I was writing about, so I went back to school for a CS master's at Georgia Tech, worked as an NLP engineer, and started a second PhD at Ghent. That one finishes next month.
+      </p>
+      <p>
+        I grew up in China and have lived across three continents since. Moving between disciplines and languages a lot tends to make you comfortable not having a clean answer to "so what exactly do you do."
+      </p>
+    </div>
+
+    <div class="about-section">
+      <h2 class="about-section-title">what I work on</h2>
+      <p>
+        Mostly how large language models behave: their moral judgments, what changes when you switch languages, where they fail quietly. Some fairness work too. The first PhD keeps pulling me back into philosophy of AI whether I plan it or not.
+      </p>
+    </div>
+
+    <div class="about-section">
+      <h2 class="about-section-title">lately</h2>
+      <p>
+        I've always used writing to figure out what I actually think. The <a href="/thoughts">thoughts</a> tab is where that ends up. The posts there are not polished. Some are about AI research, some are reactions to papers, some are things I noticed and wanted to write down. I prefer it that way.
+      </p>
+    </div>
+
+    <div class="about-section">
+      <h2 class="about-section-title">find me</h2>
+      <div class="about-links">
+        <a href="/assets/CV_Oct2025.pdf" class="about-link" target="_blank" rel="noopener">
+          <span class="about-link-label">CV</span>
+          <span class="about-link-desc">Academic background and publications</span>
+        </a>
+        <a href="https://github.com/l1n4n" class="about-link" target="_blank" rel="noopener">
+          <span class="about-link-label">GitHub</span>
+          <span class="about-link-desc">Code, datasets, experiments</span>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
