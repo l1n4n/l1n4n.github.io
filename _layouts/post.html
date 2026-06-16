@@ -16,4 +16,18 @@ layout: default
   <nav class="post-nav">
     <a href="{{ '/thoughts' | relative_url }}">&larr; all thoughts</a>
   </nav>
+
+  <!-- === Comments (Cusdis) === -->
+  <!-- Replace YOUR_CUSDIS_APP_ID below with the App ID from your free cusdis.com dashboard. -->
+  <section class="post-comments">
+    <h2 class="comments-title">Comments</h2>
+    <div id="cusdis_thread"
+      data-host="https://cusdis.com"
+      data-app-id="21f2b357-36d5-42d1-b690-6d57e855f786"
+      data-page-id="{{ page.url }}"
+      data-page-url="{{ page.url | absolute_url }}"
+      data-page-title="{{ page.title | xml_escape }}">
+    </div>
+    <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
+  </section>
 </article>

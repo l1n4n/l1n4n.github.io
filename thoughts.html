@@ -20,3 +20,17 @@ permalink: /thoughts
   </li>
   {% endfor %}
 </ul>
+
+<!-- === Email subscription (follow.it) === -->
+<!-- Subscribers are emailed automatically when a new post hits the RSS feed (nanli.io/feed.xml). -->
+<section class="subscribe">
+  <p class="subscribe-label">Get new thoughts by email.</p>
+  <form
+    class="subscribe-form"
+    action="https://api.follow.it/subscription-form/S0p2Y1h1R2dXaUpiUHYwNjZJck1xM1NNdkdlbmdHRXhCUzgzOUNBVEhVcFhCdWd6MC9rd3A0VW1EWVVsRThsOHFGS0VQVk1EY3B0T01JK0M3ZlhWUEtTakVLTWovMng0Ulp5dkQ0V1RkUDMzVFk5VjByL1IrUEJJdTg5U3FRbmx8NHczWGR5SlFMOHNiZVNGcEZrUmVXekN4T3hVamI5a2pJanJyV2JZYVlyND0=/8"
+    method="post"
+    target="popupwindow">
+    <input type="email" name="email" placeholder="you@example.com" required>
+    <button type="submit">Subscribe</button>
+  </form>
+</section>
